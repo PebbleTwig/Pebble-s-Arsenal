@@ -1,0 +1,21 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern":
+    [
+        "NNN",
+        "NNN",
+        "NNN"
+    ],
+    "key":
+    {
+        "N":
+        {
+            "type": "ore_dict",
+            "ore": "nuggetCopper"
+        }
+    },
+    "result":
+    {
+        "item": "pebblesarsenal:ingot_copper"
+    }
+}

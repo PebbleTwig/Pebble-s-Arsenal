@@ -1,0 +1,14 @@
+itemGroup.pebblesarsenal=Pebble's Arsenal
+item.ingot_copper.name=Copper Ingot
+tile.ore_copper.name=Copper Ore
+tile.block_copper.name=Copper Block
+item.ingot_pebble_alloy.name=Pebble Alloy
+item.copper_sword.name=Copper Sword
+item.copper_battleaxe.name=Copper Battleaxe
+item.nugget_copper.name=Copper Nugget
+item.copper_knife.name=Copper Knife
+item.copper_greatsword.name=Copper Greatsword
+item.ingot_pebble.name=Pebble Ingot
+tile.ore_pebble.name=Pebble Ore
+tile.block_pebble.name=Pebble Block
+item.nugget_pebble.name=Pebble Nugget

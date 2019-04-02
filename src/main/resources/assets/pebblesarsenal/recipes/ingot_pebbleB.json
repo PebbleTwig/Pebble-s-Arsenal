@@ -1,0 +1,14 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "type": "ore_dict",
+            "ore": "blockPebble"
+        }
+    ],
+    "result":
+    {
+        "item": "pebblesarsenal:ingot_pebble",
+        "count": 9
+    }
+}

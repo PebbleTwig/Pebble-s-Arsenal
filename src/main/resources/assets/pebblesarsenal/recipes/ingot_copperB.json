@@ -1,0 +1,15 @@
+{
+    "type": "forge:ore_shapeless",
+    "ingredients": [
+        {
+            "type": "ore_dict",
+            "ore": "blockCopper"
+        }
+    ],
+    "result":
+    {
+        "item": "pebblesarsenal:ingot_copper",
+        "count": 9
+    }
+
+}

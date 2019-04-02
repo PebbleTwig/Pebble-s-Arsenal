@@ -1,0 +1,17 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "PPP",
+        "PPP",
+        "PPP"
+    ],
+    "key": {
+        "P": {
+            "type": "ore_dict",
+            "ore": "ingotPebble"
+        }
+    },
+    "result": {
+        "item": "pebblesarsenal:block_pebble"
+    }
+}

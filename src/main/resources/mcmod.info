@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pebblesarsenal",
+  "name": "Pebble's Arsenal",
+  "description": "Giving Minecraft combat just a tad more variety.",
+  "version": "0.0.6",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/PebbleTwig/Pebble-s-Arsenal",
+  "updateUrl": "",
+  "authorList": ["PebbleTwig"],
+  "credits": "ShadowFacts for his mod guide, the Internet for answering my stupid questions.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
