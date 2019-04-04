@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "pebblesarsenal:block_pebble_alloy"
+        }
+    ],
+    "result":
+    {
+        "item": "pebblesarsenal:ingot_pebble_alloy",
+        "count": 9
+    }
+}
