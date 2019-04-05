@@ -32,11 +32,24 @@ public class ModBlocks {
                 blockPebbleAlloy.createItemBlock()
         );
     }
+    public static void registerItemBlocks2(IForgeRegistry<Item> registry) {
+        registry.registerAll(
+                orePebble.createItemBlock(),
+                blockPebble.createItemBlock(),
+                blockPebbleAlloy.createItemBlock()
+        );
+    }
+
     //Register the Item Models
     public static void registerModels() {
         oreCopper.registerItemModel(Item.getItemFromBlock(oreCopper));
         orePebble.registerItemModel(Item.getItemFromBlock(orePebble));
         blockCopper.registerItemModel(Item.getItemFromBlock(blockCopper));
+        blockPebble.registerItemModel(Item.getItemFromBlock(blockPebble));
+        blockPebbleAlloy.registerItemModel((Item.getItemFromBlock(blockPebbleAlloy)));
+    }
+    public static void registerModels2() {
+        orePebble.registerItemModel(Item.getItemFromBlock(orePebble));
         blockPebble.registerItemModel(Item.getItemFromBlock(blockPebble));
         blockPebbleAlloy.registerItemModel((Item.getItemFromBlock(blockPebbleAlloy)));
     }

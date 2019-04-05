@@ -2,8 +2,6 @@ package com.pebbletwig.pebblesarsenal.recipe;
 
 import com.pebbletwig.pebblesarsenal.block.ModBlocks;
 import com.pebbletwig.pebblesarsenal.item.ModItems;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 //This class init.s Items & Blocks to the OreDict & registers smelting recipes as well
 public class ModRecipes {
 

@@ -7,6 +7,7 @@ import com.pebbletwig.pebblesarsenal.item.ModItems;
 import com.pebbletwig.pebblesarsenal.proxy.CommonProxy;
 import com.pebbletwig.pebblesarsenal.recipe.ModRecipes;
 import com.pebbletwig.pebblesarsenal.world.ModWorldGen;
+import jdk.internal.instrumentation.Logger;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -20,15 +21,13 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-//import jdk.internal.instrumentation.Logger;
-
 
 @Mod(modid = PebblesArsenal.modId, name = PebblesArsenal.name, version = PebblesArsenal.version)
 public class PebblesArsenal {
     //Mod Info
     public static final String modId = "pebblesarsenal";
     public static final String name = "Pebble's Arsenal";
-    public static final String version = "0.0.9";
+    public static final String version = "0.1.1";
     //Create a new Creative Tab
     public static final PebbleTab creativeTab = new PebbleTab();
     //Init. Tool Materials
@@ -39,7 +38,7 @@ public class PebblesArsenal {
     @Mod.Instance(modId)
     public static PebblesArsenal instance;
     //Not using this logger but commenting out in case I need it later
-    //public static Logger logger;
+    public static Logger logger;
     //Various Event Handlers
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -50,7 +49,11 @@ public class PebblesArsenal {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         ModRecipes.init();
-        //System.out.println(name + " is initializing!");
+        /*
+        ConfigHandler.init();
+        ConfigHandler.setFile("pebblesarsenal.cfg");
+        ConfigHandler.writeConfig("Pebble's Arsenal", "thisModsBaseSwordsEnabled", true);
+        */
     }
 
     @Mod.EventHandler
@@ -71,14 +74,28 @@ public class PebblesArsenal {
 
         @SubscribeEvent
         public static void registerItems(RegistryEvent.Register<Item> event) {
-            ModItems.register(event.getRegistry());
-            ModBlocks.registerItemBlocks(event.getRegistry());
+            if(ModConfig.getDisableThermal()==false){
+                ModItems.register(event.getRegistry());
+                ModBlocks.registerItemBlocks(event.getRegistry());
+            } else if(ModConfig.getDisableThermal()==true) {
+                ModItems.register2(event.getRegistry());
+                ModBlocks.registerItemBlocks2(event.getRegistry());
+            }
+
+
         }
 
         @SubscribeEvent
         public static void registerItems(ModelRegistryEvent event) {
-            ModItems.registerModels();
-            ModBlocks.registerModels();
+           if(ModConfig.getDisableThermal()==false){
+               ModItems.registerModels();
+               ModBlocks.registerModels();
+           } else if (ModConfig.getDisableThermal()==true){
+               ModItems.registerModels2();
+               ModBlocks.registerModels2();
+           }
+
+
         }
     }
 }
