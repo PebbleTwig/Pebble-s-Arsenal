@@ -7,7 +7,6 @@ import com.pebbletwig.pebblesarsenal.item.ModItems;
 import com.pebbletwig.pebblesarsenal.proxy.CommonProxy;
 import com.pebbletwig.pebblesarsenal.recipe.ModRecipes;
 import com.pebbletwig.pebblesarsenal.world.ModWorldGen;
-//import jdk.internal.instrumentation.Logger;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -37,8 +36,6 @@ public class PebblesArsenal {
 
     @Mod.Instance(modId)
     public static PebblesArsenal instance;
-    //Not using this logger but commenting out in case I need it later
-    //public static Logger logger;
     //Various Event Handlers
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -48,17 +45,15 @@ public class PebblesArsenal {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-        ModRecipes.init();
-        /*
-        ConfigHandler.init();
-        ConfigHandler.setFile("pebblesarsenal.cfg");
-        ConfigHandler.writeConfig("Pebble's Arsenal", "thisModsBaseSwordsEnabled", true);
-        */
+        if(ModConfig.getDisableThermal()==false) {
+            ModRecipes.init();
+        } else if(ModConfig.getDisableThermal()==true){
+            ModRecipes.init2();
+        }
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        //System.out.println(name +" is done initializing!");
     }
     //Creating my proxy
     @SidedProxy(serverSide = "com.pebbletwig.pebblesarsenal.proxy.CommonProxy", clientSide = "com.pebbletwig.pebblesarsenal.proxy.ClientProxy")

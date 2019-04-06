@@ -30,4 +30,15 @@ public class ModRecipes {
         //GameRegistry.addSmelting(ModItems.copperBattleaxe, new ItemStack(ModItems.nuggetCopper), 0.7f);
         */
     }
+    public static void init2() {
+        //Ore Dictionary
+        ModBlocks.orePebble.initOreDict();
+        ModBlocks.blockPebble.initOreDict();
+        ModItems.ingotPebble.initOreDict();
+        ModBlocks.blockPebble.initOreDict();
+        ModItems.nuggetPebble.initOreDict();
+        ModItems.ingotPebbleAlloy.initOreDict();
+        ModItems.nuggetPebbleAlloy.initOreDict();
+        ModBlocks.blockPebbleAlloy.initOreDict();
+    }
 }
