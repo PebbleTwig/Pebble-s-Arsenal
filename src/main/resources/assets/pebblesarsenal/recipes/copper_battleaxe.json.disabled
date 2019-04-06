@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "CCC",
+        "CSC",
+        " S "
+    ],
+    "key": {
+        "C": {
+            "type": "forge:ore_dict",
+            "ore": "ingotCopper"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "pebblesarsenal:copper_battleaxe"
+    }
+}

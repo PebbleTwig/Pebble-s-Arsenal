@@ -1,0 +1,19 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        " C ",
+        " S "
+    ],
+    "key": {
+        "C": {
+            "type": "forge:ore_dict",
+            "ore": "ingotCopper"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "pebblesarsenal:copper_knife"
+    }
+}
