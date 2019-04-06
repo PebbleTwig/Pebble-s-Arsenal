@@ -7,7 +7,7 @@ import com.pebbletwig.pebblesarsenal.item.ModItems;
 import com.pebbletwig.pebblesarsenal.proxy.CommonProxy;
 import com.pebbletwig.pebblesarsenal.recipe.ModRecipes;
 import com.pebbletwig.pebblesarsenal.world.ModWorldGen;
-import jdk.internal.instrumentation.Logger;
+//import jdk.internal.instrumentation.Logger;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -38,7 +38,7 @@ public class PebblesArsenal {
     @Mod.Instance(modId)
     public static PebblesArsenal instance;
     //Not using this logger but commenting out in case I need it later
-    public static Logger logger;
+    //public static Logger logger;
     //Various Event Handlers
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
