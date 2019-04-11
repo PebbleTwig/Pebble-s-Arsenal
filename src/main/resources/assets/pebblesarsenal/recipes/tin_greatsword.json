@@ -1,0 +1,20 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        " PP",
+        "PPP",
+        "SP "
+    ],
+    "key": {
+        "P": {
+            "type": "forge:ore_dict",
+            "ore": "ingotTin"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "pebblesarsenal:tin_greatsword"
+    }
+}

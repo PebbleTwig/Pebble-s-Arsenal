@@ -19,7 +19,10 @@ public class ModRecipes {
         ModBlocks.blockCopper.initOreDict();
         ModItems.nuggetPebbleAlloy.initOreDict();
         ModBlocks.blockPebbleAlloy.initOreDict();
-
+        ModBlocks.oreTin.initOreDict();
+        ModBlocks.blockTin.initOreDict();
+        ModItems.ingotTin.initOreDict();
+        ModItems.nuggetTin.initOreDict();
         //Regular Smelting
         /*
         GameRegistry.addSmelting(ModBlocks.oreCopper, new ItemStack(ModItems.ingotCopper), 0.7f);

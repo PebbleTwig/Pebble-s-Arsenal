@@ -26,14 +26,22 @@ public class ModItems {
     public static ItemKnife copperKnife = new ItemKnife(PebblesArsenal.copperTM,"copper_knife");
     public static ItemGreatSword copperGreatSword = new ItemGreatSword(PebblesArsenal.copperTM, "copper_greatsword");
     public static ItemSword copperSword = new ItemSword(PebblesArsenal.copperTM, "copper_sword");
+    public static ItemOre ingotTin = new ItemOre("ingot_tin","ingotTin");
+    public static ItemOre nuggetTin = new ItemOre("nugget_tin", "nuggetTin");
+    public static ItemSword tinSword = new ItemSword(PebblesArsenal.tinTM,"tin_sword");
+    public static ItemKnife tinKnife = new ItemKnife(PebblesArsenal.tinTM, "tin_knife");
+    public static ItemGreatSword tinGreatSword = new ItemGreatSword(PebblesArsenal.tinTM, "tin_greatsword");
+
 
     //Register The Items
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
                 nuggetCopper,
+                nuggetTin,
                 nuggetPebble,
                 nuggetPebbleAlloy,
                 ingotCopper,
+                ingotTin,
                 ingotPebble,
                 ingotPebbleAlloy,
                 copperSword,
@@ -44,8 +52,11 @@ public class ModItems {
                 pebbleGreatSword,
                 pebbleAlloySword,
                 pebbleAlloyKnife,
-                pebbleAlloyGreatSword
+                pebbleAlloyGreatSword,
                 //copperBattleaxe
+                tinSword,
+                tinKnife,
+                tinGreatSword
         );
     }
 
@@ -62,8 +73,10 @@ public class ModItems {
                 pebbleGreatSword,
                 pebbleAlloySword,
                 pebbleAlloyKnife,
-                pebbleAlloyGreatSword
-                //copperBattleaxe
+                pebbleAlloyGreatSword,
+                tinGreatSword,
+                tinKnife
+
         );
     }
 
@@ -84,7 +97,11 @@ public class ModItems {
         pebbleAlloySword.registerItemModel();
         pebbleAlloyKnife.registerItemModel();
         pebbleAlloyGreatSword.registerItemModel();
-        //copperBattleaxe.registerItemModel();
+        ingotTin.registerItemModel();
+        nuggetTin.registerItemModel();
+        tinSword.registerItemModel();
+        tinKnife.registerItemModel();
+        tinGreatSword.registerItemModel();
 
     }
 
@@ -102,6 +119,7 @@ public class ModItems {
         pebbleAlloyKnife.registerItemModel();
         pebbleAlloyGreatSword.registerItemModel();
         //copperBattleaxe.registerItemModel();
-
+        tinKnife.registerItemModel();
+        tinGreatSword.registerItemModel();
     }
 }

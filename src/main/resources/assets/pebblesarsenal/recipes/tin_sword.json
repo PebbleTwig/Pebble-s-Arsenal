@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " P ",
+        " P ",
+        " S "
+    ],
+    "key": {
+        "P": {
+            "item": "pebblesarsenal:ingot_tin"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "pebblesarsenal:tin_knife"
+    }
+}

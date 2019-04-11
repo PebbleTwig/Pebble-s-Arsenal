@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "pebblesarsenal:items/tin_knife"
+    }
+}

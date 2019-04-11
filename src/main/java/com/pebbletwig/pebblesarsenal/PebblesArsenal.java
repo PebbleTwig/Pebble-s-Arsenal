@@ -26,13 +26,14 @@ public class PebblesArsenal {
     //Mod Info
     public static final String modId = "pebblesarsenal";
     public static final String name = "Pebble's Arsenal";
-    public static final String version = "0.1.1";
+    public static final String version = "0.1.2";
     //Create a new Creative Tab
     public static final PebbleTab creativeTab = new PebbleTab();
     //Init. Tool Materials
     public static final Item.ToolMaterial copperTM = EnumHelper.addToolMaterial("COPPER", 2, 500, 1, 1, 14);
     public static final Item.ToolMaterial pebbleTM = EnumHelper.addToolMaterial("PEBBLE", 2, 600, 1, 1, 16);
     public static final Item.ToolMaterial pebbleAlloyTM = EnumHelper.addToolMaterial("PEBBLE_ALLOY", 2, 850,1, 2, 18);
+    public static final Item.ToolMaterial tinTM = EnumHelper.addToolMaterial("TIN",2,500,1,1,15);
 
     @Mod.Instance(modId)
     public static PebblesArsenal instance;
@@ -64,7 +65,11 @@ public class PebblesArsenal {
 
         @SubscribeEvent
         public static void registerBlocks(RegistryEvent.Register<Block> event) {
-            ModBlocks.register(event.getRegistry());
+            if(ModConfig.getDisableThermal()==false){
+                ModBlocks.register(event.getRegistry());
+            } else if(ModConfig.getDisableThermal()==true) {
+                ModBlocks.register2(event.getRegistry());
+            }
         }
 
         @SubscribeEvent
@@ -92,5 +97,7 @@ public class PebblesArsenal {
 
 
         }
+
     }
+    
 }
