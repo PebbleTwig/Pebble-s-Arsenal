@@ -40,9 +40,10 @@ public class ModBlocks {
                 oreTin.createItemBlock(),
                 orePebble.createItemBlock(),
                 blockCopper.createItemBlock(),
+                blockTin.createItemBlock(),
                 blockPebble.createItemBlock(),
-                blockPebbleAlloy.createItemBlock(),
-                blockTin.createItemBlock()
+                blockPebbleAlloy.createItemBlock()
+
         );
     }
     public static void registerItemBlocks2(IForgeRegistry<Item> registry) {
