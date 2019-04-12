@@ -8,6 +8,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
+import com.pebbletwig.pebblesarsenal.ModConfig;
 
 import java.util.Random;
 //This class causes the Ore Blocks to spawn in the World
@@ -16,12 +17,20 @@ public class ModWorldGen implements IWorldGenerator{
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         if (world.provider.getDimension() == 0) {
-            generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+            if(ModConfig.getDisableThermal()==false) {
+                generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+            } else if (ModConfig.getDisableThermal()==true){
+                generateOverworld2(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+            }
         }
     }
 
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){
-        generateOre(ModBlocks.oreCopper.getDefaultState(), world, random, chunkX * 16,chunkZ*16, 16, 64, 4 + random.nextInt(4), 6);
+        generateOre(ModBlocks.oreCopper.getDefaultState(), world, random, chunkX * 16,chunkZ*16, 30, 64, 4 + random.nextInt(4), 6);
+        generateOre(ModBlocks.oreTin.getDefaultState(),world, random,chunkX*16, chunkZ*16, 20, 60,4 +random.nextInt(4), 6 );
+        generateOre(ModBlocks.orePebble.getDefaultState(), world, random, chunkX * 16,chunkZ*16, 12, 72, 3 + random.nextInt(4), 2);
+    }
+    private void generateOverworld2(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){
         generateOre(ModBlocks.orePebble.getDefaultState(), world, random, chunkX * 16,chunkZ*16, 12, 72, 3 + random.nextInt(4), 6);
     }
 
