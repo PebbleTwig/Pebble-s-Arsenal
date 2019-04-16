@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -35,6 +36,18 @@ public class PebblesArsenal {
     public static final Item.ToolMaterial pebbleAlloyTM = EnumHelper.addToolMaterial("PEBBLE_ALLOY", 2, 850,1, 2, 18);
     public static final Item.ToolMaterial tinTM = EnumHelper.addToolMaterial("TIN",2,500,1,1,15);
 
+    public static final Item.ToolMaterial copperTM2 = EnumHelper.addToolMaterial("COPPER", 2, 300, 1, 1, 14);
+    public static final Item.ToolMaterial pebbleTM2 = EnumHelper.addToolMaterial("PEBBLE", 2, 400, 1, 1, 16);
+    public static final Item.ToolMaterial pebbleAlloyTM2 = EnumHelper.addToolMaterial("PEBBLE_ALLOY", 2, 650,1, 2, 18);
+    public static final Item.ToolMaterial tinTM2 = EnumHelper.addToolMaterial("TIN",2,300,1,1,15);
+
+
+    public static final Item.ToolMaterial copperTM3 = EnumHelper.addToolMaterial("COPPER", 2, 700, 1, 1, 14);
+    public static final Item.ToolMaterial pebbleTM3 = EnumHelper.addToolMaterial("PEBBLE", 2, 800, 1, 1, 16);
+    public static final Item.ToolMaterial pebbleAlloyTM3 = EnumHelper.addToolMaterial("PEBBLE_ALLOY", 2, 1050,1, 2, 18);
+    public static final Item.ToolMaterial tinTM3 = EnumHelper.addToolMaterial("TIN",2,700,1,1,15);
+
+
     @Mod.Instance(modId)
     public static PebblesArsenal instance;
     //Various Event Handlers
@@ -51,6 +64,8 @@ public class PebblesArsenal {
         } else if(ModConfig.getDisableThermal()==true){
             ModRecipes.init2();
         }
+        System.out.println("AutoRegLib is installed: " + Loader.isModLoaded("autoreglib"));
+
     }
 
     @Mod.EventHandler

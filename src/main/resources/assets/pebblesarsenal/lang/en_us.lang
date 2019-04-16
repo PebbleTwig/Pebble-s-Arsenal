@@ -27,3 +27,14 @@ item.nugget_tin.name=Tin Nugget
 item.tin_sword.name=Tin Sword
 item.tin_knife.name=Tin Knife
 item.tin_greatsword.name=Tin Greatsword
+
+item.wood_greatsword.name=Wood Greatsword
+item.wood_knife.name=Wood Knife
+item.stone_greatsword.name=Stone Greatsword
+item.stone_knife.name=Stone Knife
+item.iron_greatsword.name=Iron Greatsword
+item.iron_knife.name=Iron Knife
+item.gold_greatsword.name=Gold Greatsword
+item.gold_knife.name=Gold Knife
+item.diamond_greatsword.name=Diamond Greatsword
+item.diamond_knife.name=Diamond Knife

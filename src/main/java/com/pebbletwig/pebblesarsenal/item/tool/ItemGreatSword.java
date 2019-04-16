@@ -6,6 +6,7 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 import java.util.Collection;
@@ -22,6 +23,7 @@ public class ItemGreatSword extends net.minecraft.item.ItemSword {
         setUnlocalizedName(name);
         this.name=name;
         setCreativeTab(PebblesArsenal.creativeTab);
+
     }
     //Register the Item Model
 
@@ -53,4 +55,5 @@ public class ItemGreatSword extends net.minecraft.item.ItemSword {
             modifiers.add(new AttributeModifier(modifier.getID(), modifier.getName(), modifier.getAmount() * multiplier, modifier.getOperation())); // Add the new modifier
         }
     }
+
 }
