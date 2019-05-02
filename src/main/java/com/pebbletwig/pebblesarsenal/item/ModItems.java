@@ -12,7 +12,6 @@ public class ModItems {
     //Create Items, note here. I have decided to remove the battleaxe as I feel it is too overpowered.
     public static ItemOre ingotCopper = new ItemOre("ingot_copper", "ingotCopper");
     public static ItemOre ingotPebbleAlloy = new ItemOre("ingot_pebble_alloy", "ingotPebbleAlloy");
-    //public static ItemAxe copperBattleaxe = new ItemAxe(PebblesArsenal.copperOneTM,"copper_battleaxe");
     public static ItemOre nuggetCopper = new ItemOre("nugget_copper", "nuggetCopper");
     public static ItemOre ingotPebble = new ItemOre("ingot_pebble", "ingotPebble");
     public static ItemOre nuggetPebble = new ItemOre("nugget_pebble", "nuggetPebble");
@@ -67,8 +66,12 @@ public class ModItems {
                 pebbleGreatSword,
                 pebbleAlloySword,
                 pebbleAlloyKnife,
-                pebbleAlloyGreatSword
-                //copperBattleaxe
+                pebbleAlloyGreatSword,
+                woodKnife,
+                stoneKnife,
+                ironKnife,
+                goldKnife,
+                diamondKnife
 
         );
     }
@@ -88,7 +91,12 @@ public class ModItems {
                 pebbleAlloyKnife,
                 pebbleAlloyGreatSword,
                 tinGreatSword,
-                tinKnife
+                tinKnife,
+                woodKnife,
+                stoneKnife,
+                ironKnife,
+                goldKnife,
+                diamondKnife
 
         );
     }
@@ -115,6 +123,11 @@ public class ModItems {
         tinSword.registerItemModel();
         tinKnife.registerItemModel();
         tinGreatSword.registerItemModel();
+        woodKnife.registerItemModel();
+        stoneKnife.registerItemModel();
+        ironKnife.registerItemModel();
+        goldKnife.registerItemModel();
+        diamondKnife.registerItemModel();
 
     }
 
@@ -131,8 +144,12 @@ public class ModItems {
         pebbleAlloySword.registerItemModel();
         pebbleAlloyKnife.registerItemModel();
         pebbleAlloyGreatSword.registerItemModel();
-        //copperBattleaxe.registerItemModel();
         tinKnife.registerItemModel();
         tinGreatSword.registerItemModel();
+        woodKnife.registerItemModel();
+        stoneKnife.registerItemModel();
+        ironKnife.registerItemModel();
+        goldKnife.registerItemModel();
+        diamondKnife.registerItemModel();
     }
 }
