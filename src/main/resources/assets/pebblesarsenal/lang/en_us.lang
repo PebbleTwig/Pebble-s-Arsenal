@@ -4,7 +4,6 @@ tile.ore_copper.name=Copper Ore
 tile.block_copper.name=Copper Block
 item.ingot_pebble_alloy.name=Pebble Alloy Ingot
 item.copper_sword.name=Copper Sword
-item.copper_battleaxe.name=Copper Battleaxe
 item.nugget_copper.name=Copper Nugget
 item.copper_knife.name=Copper Knife
 item.copper_greatsword.name=Copper Greatsword
@@ -27,6 +26,7 @@ item.nugget_tin.name=Tin Nugget
 item.tin_sword.name=Tin Sword
 item.tin_knife.name=Tin Knife
 item.tin_greatsword.name=Tin Greatsword
+
 
 item.wood_greatsword.name=Wood Greatsword
 item.wood_knife.name=Wood Knife

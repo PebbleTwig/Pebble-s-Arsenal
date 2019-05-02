@@ -27,7 +27,7 @@ public class PebblesArsenal {
     //Mod Info
     public static final String modId = "pebblesarsenal";
     public static final String name = "Pebble's Arsenal";
-    public static final String version = "0.1.2";
+    public static final String version = "0.1.3";
     //Create a new Creative Tab
     public static final PebbleTab creativeTab = new PebbleTab();
     //Init. Tool Materials
@@ -40,7 +40,6 @@ public class PebblesArsenal {
     public static final Item.ToolMaterial pebbleTM2 = EnumHelper.addToolMaterial("PEBBLE", 2, 400, 1, 1, 16);
     public static final Item.ToolMaterial pebbleAlloyTM2 = EnumHelper.addToolMaterial("PEBBLE_ALLOY", 2, 650,1, 2, 18);
     public static final Item.ToolMaterial tinTM2 = EnumHelper.addToolMaterial("TIN",2,300,1,1,15);
-
 
     public static final Item.ToolMaterial copperTM3 = EnumHelper.addToolMaterial("COPPER", 2, 700, 1, 1, 14);
     public static final Item.ToolMaterial pebbleTM3 = EnumHelper.addToolMaterial("PEBBLE", 2, 800, 1, 1, 16);
